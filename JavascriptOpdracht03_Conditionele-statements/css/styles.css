@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: #34495E;
+    height: 70px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border: 2px solid black;
+}
+.Container{
+    width: calc(100% - 40px);
+    max-width: 1400x;
+    height: 100%;
+    margin: 0 auto;
+    border:auto black;
+    overflow: hidden;
+}
+.Container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.HeaderLogo{
+    width: 80px;
+    border: 2px black;
+    display: inline-block;
+    height: 100%;
+    left: 0px;
+
+
+}
+.HeaderMenu{
+    width: calc(100% - 80px);
+    color: #FFFFFF;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    text-align: right;
+    
+}
+
+
+.HeaderLogo img{
+    width: 70px;
+    margin: auto;
+    margin-left: 0px;
+    
+}
+.HeaderMenu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 75px;
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-right: 20px;
+    font-family: fantasy;
+    
+}
+.HeaderMenu a:hover{
+    color: #1ABC9C;
+}
+
+.LandingPage{
+    width: 50%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    background-color: black;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 680px;
+    border: 4px solid black ;
+    border-radius: 2px;
+    display: inline-block;
+    
+
+}
+.LandingPage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Tekstbox{
+    background-color: solid white;
+    border: 2px solid white;
+    width: 40%;
+    padding: auto;
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.BigBox1, .BigBox2, .BigBox3{
+    background-color:  #34495E;
+    border: 2px solid black;
+    width: 33%;
+    padding: 20px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: bottom ;
+    color: #1ABC9C;
+}
+.BigBox2{
+    background-color: #FFFFFF;
+    color:#34495E;
+}
+.BigBox3{
+    background-color: #1ABC9C;
+    color:#FFFFFF;
+    
+}
+.projectenbox1, .projectenbox2, .projectenbox3{
+    background-color:  #34495E;
+    border: 2px solid black;
+    width: 33%;
+    padding: 20px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: bottom ;
+    color: #1ABC9C;  
+}
+.projectenbox2{
+    background-color: #FFFFFF;
+    color:#34495E;
+}
+.projectenbox3{
+    background-color: #1ABC9C;
+    color:#FFFFFF;
+}
+.overmijbox1, .overmijbox2, .overmijbox3{
+    background-color:  #34495E;
+    border: 2px solid black;
+    width: 33%;
+    padding: 20px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: bottom ;
+    color: #1ABC9C;
+}
+.basketballBox1, .basketballBox2{
+    background-color:  #34495E;
+    border: 2px solid black;
+    width: 40%;
+    padding: 20px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: bottom ;
+    color: #FFFFFF;  
+}
+.basketballBox2{
+    background-color: #1ABC9C;
+}
+.overmijbox2{
+    background-color: #FFFFFF;
+    color:#34495E;
+}
+.overmijbox3{
+    background-color: #1ABC9C;
+    color:#FFFFFF; 
+}
+.overmijbox1 button{
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #34495E;
+    
+}
+.overmijbox1 p{
+    color: #FFFFFF;
+    max-height: 200px;
+    overflow: hidden;
+}
+.legeBox{
+    background-color: white;
+    width: 100%;
+    padding: 6px;
+    height: 10px;
+    display: inline-block;
+    
+}
+.Tekstnaastfoto{
+    text-align: center;
+    font-size: 30px;
+    color: #1ABC9C;
+    text-decoration: none;
+    font-family: fantasy;
+    text-transform:uppercase;
+} 
+.socialmediabox, .socialmediabox2{
+    background-color: #34495E;
+    font-size: 30px;
+    width: 49%;
+    padding: 20px;
+    font-family: fantasy;
+    height: 250px;
+    display: inline-block;
+    border: 2px solid black;
+    
+}
+.socialmediabox2{
+    background-color: #1ABC9C;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100% ; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid black; /* black border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #1ABC9C;
+    color: #34495E;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #FFFFFF;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container2 {
+    border-radius: 5px;
+    background-color: #34495E;
+    padding: 40px;
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 1177px;
+  }
+
+.KleineTekstnaastfoto{
+    text-align: center;
+    font-size: 25px;
+    color: #34495E;
+    text-decoration: none;
+    font-family: fantasy;
+    text-transform:none;
+}
+
+.knop{
+    text-decoration: none;
+    font-family: fantasy;
+    color: #34495E;
+}
+.knop:hover{
+    color: #1ABC9C;
+}
+.knopcontainer{
+    text-align: center;
+    vertical-align: bottom;
+    border: 2px #FFFFFF;
+    background-color: #34495E;
+    border-radius: 2px;
+    width: 100px;
+    height: 20px;
+}
+.GroteTiteltekst{
+    text-align: center;
+    font-size: 45px;
+    vertical-align:right;
+    color: #1ABC9C;
+    text-decoration: none;
+    font-family: fantasy;
+    text-transform:uppercase;
+    margin-top: 90px;
+}
+.Titeltekst{
+    text-align: left;
+    font-size: 30px;
+    color: #34495E;
+    text-decoration: underline;
+    font-family: fantasy;
+    text-transform:uppercase;
+}
+.Titeltekst2, .Titeltekst3{
+    text-align: center;
+    font-size: 25px;
+    color: #34495E;
+    text-decoration: none;
+    font-family: fantasy;
+    text-transform:none;
+}
+.Titeltekst3{
+    color: #FFFFFF;
+}
+.InnerContact{
+    font-size: 15px;
+    color: #1ABC9C;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: none;
+}
+.TiteltekstBox1, .TiteltekstBox2, .TiteltekstBox3{
+    text-align: center;
+    font-size: 30px;
+    color:#FFFFFF ;
+    text-decoration: none;
+    font-family: fantasy;
+    text-transform: none;
+}
+.TiteltekstBox2{
+    color: #34495E;
+}
+.TiteltekstBox3{
+    color: #34495E;
+}
+.TiteltekstBox1:hover{
+    color: #1ABC9C;
+
+}
+.TiteltekstBox2:hover{
+    color: #1ABC9C;
+}
+.TiteltekstBox3:hover{
+    color: #FFFFFF;
+}
+
+.KleineTekst, .socialTitel{
+    text-align: left;
+    text-decoration: none;
+    text-size-adjust: 20px;
+    color: #34495E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.socialTitel{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: fantasy;
+}
+.kleinesocial, .kleinesocial2{
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.kleinesocial2{
+    color: #34495E;
+}
+.kleinesocial:hover{
+    color: #1ABC9C;
+}
+.kleinesocial2:hover{
+    color: #FFFFFF;
+}
+.KleineTekst2{
+    text-align: center;
+    text-decoration: none;
+    text-size-adjust: 20px;
+    color: #34495E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    background-color: rgb(75, 75, 75);
+    padding: 10px 10px;
+}
+footer p {
+    text-align: center;
+    color: white;
+}
+@media (max-width: 1000px) {
+    header, .Container, .HeaderLogo, .HeaderMenu, .LandingPage, .Tekstbox, .BigBox1, .BigBox2, .BigBox3, .projectenbox1, .projectenbox2, .projectenbox3, .overmijbox1, .overmijbox2, .overmijbox3, .legeBox, .Tekstnaastfoto, .socialmediabox, .socialmediabox2, .container2, 
+    .KleineTekstnaastfoto, .GroteTiteltekst, .Titeltekst, .Titeltekst2, .Titeltekst3, .InnerContact, .TiteltekstBox1, .TiteltekstBox2, .TiteltekstBox3, .KleineTekst2, .KleineTekst {
+    width: 100%;
+    }
+   }
