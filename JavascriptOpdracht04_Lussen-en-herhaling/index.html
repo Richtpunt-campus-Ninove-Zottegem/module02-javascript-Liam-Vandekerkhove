@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raad het Getal</title>
+</head>
+<body>
+
+<h1>Raad het Getal!</h1>
+<button onclick="startSpel()">Gok!</button>
+
+<script>
+function startSpel() {
+  var geheimGetal = Math.floor(Math.random() * 100) + 1;
+  var gok;
+  var pogingen = 5;
+
+  while (pogingen > 0) {
+    gok = prompt("Raad het getal (1-100). Pogingen: " + pogingen);
+    if (gok == null) return; // Annuleer
+
+    if (gok == geheimGetal) {
+      alert("Gewonnen!");
+      return;
+    } else if (gok < geheimGetal) {
+      alert("Te laag!");
+    } else {
+      alert("Te hoog!");
+    }
+    pogingen--;
+  }
+  alert("Verloren! Het was " + geheimGetal);
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meerkeuzequiz</title>
+    <link rel="STYLESHEET" href="C:\Users\liam.vandekerkhove\github-classroom\Richtpunt-campus-Ninove-Zottegem\module02-javascript-Liam-Vandekerkhove\JavascriptOpdracht03_Conditionele-statements\css\styles.css" type="text/css">
+    
+</head>
+<body>
+  <header>
+    <div class="Container">
+      <div class="HeaderLogo">
+        <a href="index.html">
+          <img src="Afbeeldingen/Alt logo Liam.png">
+        </a>
+        
+      </div>
+      <div class="HeaderMenu">
+        <a href="Contact.html">Contact</a>
+        <a href="Overmij.html">Over mij</a>
+        <a href="projecten.html">Mijn Projecten</a>
+        <a href="index.html">Home</a>
+
+      </div>
+    </div>
+  </header>
+  <div class="Tekstbox">
+  
+    <p class="Tekstnaastfoto">Welkom bij de quiz</p> 
+  </div>
+
+  <div class="knopcontainer">
+    <button onclick="showprompt()" class="knop">Favoriete getal?</button>
+    <button onclick="brom()" class="knop">Brommers</button>
+  </div>
+  
+  <script>
+function showprompt(){
+var gok = prompt("Wat is mijn favoriete getal?");
+getal = 11
+if(getal == gok){
+    alert("Dit was inderdaad het juiste getal!");
+
+}
+else alert("Sorry, dit was niet correct!");
+}
+
+function brom(){
+  var brom = prompt("Hoeveel 2 takten staan er in de garage?");
+  takt = 2
+  if(takt = brom){
+  alert("Dat klopt!");
+}
+else alert("Sorry, dit was niet correct!");
+}
+
+  </script>
+</body>
+</html>

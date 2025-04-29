@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boodschappen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Boodschappen</h2>
+    <input type="text" id="item" placeholder="Item">
+    <button onclick="add()">Voeg toe</button>
+    <button onclick="remove()">Verwijder</button>
+    <ul id="lijst"></ul>
+
+    <script>
+    var boodschappen = [];
+
+    function add() {
+        var item = document.getElementById("item").value.trim();
+        if (item) {
+            boodschappen.push(item);
+            document.getElementById("item").value = "";
+            update();
+        }
+    }
+
+    function remove() {
+        boodschappen.pop();
+        update();
+    }
+
+    function update() {
+        var lijst = document.getElementById("lijst");
+        lijst.innerHTML = "";
+        for (var i = 0; i < boodschappen.length; i++) {
+            var li = document.createElement("li");
+            li.textContent = boodschappen[i];
+            lijst.appendChild(li);
+        }
+    }
+    </script>
+</body>
+</html>
